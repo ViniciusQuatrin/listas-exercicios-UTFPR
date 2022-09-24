@@ -13,18 +13,30 @@ e também a quantidade de numeros pares e ímpares-->
 </head>
 <body>
     <script>
-        var i, num, soma=0, media, maior=0, menor=99999, qtdPar, qtdImpar;
+        var i, num, soma=0, media, maior=0, menor=99999, qtdPar=0, qtdImpar=0;
         document.write('<hr>Relação dos Numeros<hr>');
         for (i=1; i<=10; i++) {
             num = Number(prompt('insira o '+i+'º numero'));
 
             somar();
+            acharMaiorMenor();
+            contarPar();
             
             document.write(num, '<br>');
-        }
+        }calcularMedia();
 
-        document.write('<hr>teste');
-        document.write('<hr>');
+        document.write('<hr>Soma<hr>');
+        document.write('A soma será de ',soma, '<br>');
+        document.write('<hr>Média<hr>');
+        document.write('A média será de ',media,'<br>');
+        document.write('<hr>Maior<hr>');
+        document.write('O maior numero será ',maior,'<br>');
+        document.write('<hr>Menor<hr>');
+        document.write('O menor numero será ',menor,'<br>');
+        document.write('<hr>Pares<hr>');
+        document.write('A quantidade de pares é ',qtdPar,'<br>');
+        document.write('<hr>Ímpares<hr>');
+        document.write('A quantidade de impares é ',qtdImpar,'<br>');
     </script>
 </body>
 </html>
