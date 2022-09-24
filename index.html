@@ -1,0 +1,30 @@
+<!--A proposta dessa atividade era criar
+um programa que lesse 10 numeros e informasse
+a soma deles, a média, o maior e o menor numero
+e também a quantidade de numeros pares e ímpares-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funcoes.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i, num, soma=0, media, maior=0, menor=99999, qtdPar, qtdImpar;
+        document.write('<hr>Relação dos Numeros<hr>');
+        for (i=1; i<=10; i++) {
+            num = Number(prompt('insira o '+i+'º numero'));
+
+            somar();
+            
+            document.write(num, '<br>');
+        }
+
+        document.write('<hr>teste');
+        document.write('<hr>');
+    </script>
+</body>
+</html>
